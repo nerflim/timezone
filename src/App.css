@@ -1,3 +1,120 @@
 .App {
 	text-align: center;
 }
+.svg-container {
+	width: 350px;
+	height: 600px;
+	margin: 60px auto;
+	border-radius: 40px;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 10px 26px -17px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 10px 26px -17px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 10px 26px -17px rgba(0, 0, 0, 0.75);
+}
+
+/* trees */
+.st12 {
+	fill: #c1d12a;
+}
+.st13 {
+	fill: #d5dd3e;
+}
+.st14 {
+	fill: #a6b515;
+}
+.st15 {
+	fill: #6180af;
+}
+.st16 {
+	fill: #37537c;
+}
+.st17 {
+	fill: #f6d200;
+}
+.st18 {
+	fill: #f2a000;
+}
+.st19 {
+	opacity: 0.6;
+	fill: #f08500;
+}
+.st20 {
+	fill: #99a00a;
+}
+.st21 {
+	fill: #f6b000;
+}
+.st22 {
+	fill: #efa102;
+}
+.st23 {
+	opacity: 0.6;
+}
+.st24 {
+	opacity: 0.5;
+	fill: #f28804;
+}
+.st25 {
+	fill: #f28804;
+}
+.st26 {
+	opacity: 0.6;
+	fill: #eb6a05;
+}
+.st27 {
+	opacity: 0.6;
+	fill: #f6d200;
+}
+.st28 {
+	fill: #e96e02;
+}
+.st29 {
+	opacity: 0.1;
+	fill: #faffb9;
+}
+.st30 {
+	fill: #faffb9;
+}
+.st31 {
+	display: none;
+}
+.st32 {
+	display: inline;
+}
+.st33 {
+	fill: #95becc;
+}
+.st34 {
+	fill: #b5dce7;
+}
+.st35 {
+	fill: #8bbece;
+}
+.st36 {
+	fill: #bddfeb;
+}
+.st37 {
+	fill: #6aa3bb;
+}
+.st38 {
+	fill: #93c0d6;
+}
+.st39 {
+	fill: #cbd2d9;
+}
+.st40 {
+	fill: #74afc6;
+}
+.st41 {
+	fill: #a6d7e2;
+}
+.st42 {
+	fill: #aacad9;
+}
+.st43 {
+	opacity: 0.5;
+	fill: #bdbfc1;
+}
+.st44 {
+	fill: #a2ccda;
+}
