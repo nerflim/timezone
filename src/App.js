@@ -1,13 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import Sunny from './components/Sunny';
 
-function App() {
-	return (
-		<div className='App'>
-			<Sunny />
-		</div>
-	);
+export class App extends Component {
+	render() {
+		return <div className='App'>test</div>;
+	}
 }
 
 export default App;
