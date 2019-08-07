@@ -7,6 +7,8 @@ import TreeA from './svg/TreeA';
 import TreeB from './svg/TreeB';
 import TreeC from './svg/TreeC';
 import TreeD from './svg/TreeD';
+import PersonA from './svg/persons/PersonA';
+import PersonB from './svg/persons/PersonB';
 
 const SvgContainer = () => {
 	return (
@@ -29,6 +31,8 @@ const SvgContainer = () => {
 				<TreeB />
 				<TreeC />
 				<TreeD />
+				<PersonA />
+				<PersonB />
 			</svg>
 		</div>
 	);
