@@ -48,6 +48,7 @@ const PersonA = () => {
 				delay: 3
 			}
 		);
+		document.title = 'u2qNaMaMatAy!';
 	}, []);
 	return (
 		<g id='person-a'>
