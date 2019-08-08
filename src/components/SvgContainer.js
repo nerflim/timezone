@@ -9,6 +9,10 @@ import TreeC from './svg/TreeC';
 import TreeD from './svg/TreeD';
 import PersonA from './svg/persons/PersonA';
 import PersonB from './svg/persons/PersonB';
+import PersonC from './svg/persons/PersonC';
+import PersonD from './svg/persons/PersonD';
+import CarA from './svg/cars/CarA';
+import CarB from './svg/cars/CarB';
 
 const SvgContainer = () => {
 	return (
@@ -31,6 +35,10 @@ const SvgContainer = () => {
 				<TreeB />
 				<TreeC />
 				<TreeD />
+				<PersonC />
+				<PersonD />
+				<CarB />
+				<CarA />
 				<PersonA />
 				<PersonB />
 			</svg>
