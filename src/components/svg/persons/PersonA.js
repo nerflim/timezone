@@ -43,7 +43,7 @@ const PersonA = () => {
 			},
 			{
 				x: 200,
-				ease: Power0.ease,
+				ease: Power0.easeNone,
 				repeat: -1,
 				delay: 3
 			}

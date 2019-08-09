@@ -37,9 +37,10 @@ const SvgContainer = () => {
 				<TreeB />
 				<TreeC />
 				<TreeD />
+				<PersonE />
 				<PersonC />
 				<PersonD />
-				<PersonE />
+
 				<CarB />
 				<CarA />
 				<PersonA />

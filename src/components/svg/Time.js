@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import moment from 'moment';
+import { TweenMax } from 'gsap';
 
 const Time = () => {
+	useEffect(() => {
+		TweenMax.from('#time', 0, {
+			x: 50
+		});
+	}, []);
 	return (
 		<g id='time'>
-			<text transform='matrix(1 0 0 1 196.0918 219.1401)' fill='#393762' fontWeight='bold' fontSize='37.2097px'>
-				7:47 AM
+			<text id='time' transform='matrix(1 0 0 1 196.0918 219.1401)' fill='#393762' fontWeight='bold' fontSize='37.2097px'>
+				{moment().format('hh:mm A')}
 			</text>
 			<text transform='matrix(1 0 0 1 231.0199 248.3901)' fill='#393762' fontSize='16px'>
 				August 8, 2019
