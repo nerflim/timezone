@@ -12,6 +12,14 @@
 	box-shadow: 0px 10px 26px -17px rgba(0, 0, 0, 0.75);
 }
 
+#background-morning {
+	-webkit-transition: opacity 0.4s ease;
+	-moz-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+	transition: opacity 0.4s ease;
+	opacity: 0;
+}
+
 /* trees */
 .st12 {
 	fill: #c1d12a;
@@ -411,4 +419,107 @@
 }
 .car2-81 {
 	fill: #b77053;
+}
+
+/* car 3 */
+.car-3-55 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #58574b;
+}
+.car-3-56 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #402639;
+}
+.car-3-57 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #e6e7e8;
+}
+.car-3-58 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #393762;
+}
+.car-3-59 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #efc33b;
+}
+.car-3-60 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #ef4136;
+}
+.car-3-61 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #4b4a43;
+}
+.car-3-62 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #ffffff;
+}
+/* car 4 */
+.car-4-55 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #58595b;
+}
+.car-4-56 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #393762;
+}
+.car-4-57 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #e09620;
+}
+.car-4-58 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #e9b620;
+}
+.car-4-59 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #ffca05;
+}
+.car-4-60 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #ee9f21;
+}
+.car-4-61 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #f3bd18;
+}
+.car-4-62 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #e6e7e8;
+}
+.car-4-63 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #f48120;
+}
+.car-4-64 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #e6e6e6;
+}
+.car-4-65 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #d0d2d3;
+}
+.car-4-66 {
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: #58574b;
 }
