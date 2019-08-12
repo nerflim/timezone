@@ -1,20 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import moment from 'moment';
 import TweenMax from 'gsap';
 
 const Background = props => {
-	const [amPm] = useState(moment(props.time).format('A'));
-	const [morning] = useState(
-		amPm === 'AM' && parseInt(moment(props.time).format('h'), 10) >= 6 && parseInt(moment(props.time).format('h'), 10) <= 11
-	);
-	const [afternoon] = useState(
-		amPm === 'PM' && parseInt(moment(props.time).format('h'), 10) >= 12 && parseInt(moment(props.time).format('h'), 10) <= 6
-	);
-	const [even, setEven] = useState(parseInt(moment(props.time).format('m'), 10) % 2 === 0);
+	const [current, setCurrent] = useState(props.current);
 
 	useEffect(() => {
-		setEven(parseInt(moment(props.time).format('m'), 10) % 2 === 0);
-	}, [props.time]);
+		TweenMax.fromTo('#rect-overlay', 1, { opacity: 1 }, { opacity: 0 });
+
+		setTimeout(() => {
+			setCurrent(props.current);
+		}, 1000);
+	}, [props]);
 
 	return (
 		<g id='background'>
@@ -34,11 +30,20 @@ const Background = props => {
 				<stop offset='0.635' stopColor='#CD5B9C' />
 			</linearGradient>
 
-			{props.morning ? <rect id='rect-morning' width='350' height='600' fill="url('#bg-morning')" /> : ''}
+			<rect
+				width='350'
+				height='600'
+				fill={props.current === 'morning' ? "url('#bg-morning')" : props.current === 'afternoon' ? "url('#bg-afternoon')" : "url('#bg-night')"}
+			/>
 
-			{props.afternoon ? <rect id='rect-afternoon' width='350' height='600' fill="url('#bg-afternoon')" /> : ''}
-
-			{props.night ? <rect id='rect-night' width='350' height='600' fill="url('#bg-night')" /> : ''}
+			{current !== props.current ? (
+				<rect
+					id='rect-overlay'
+					width='350'
+					height='600'
+					fill={current === 'morning' ? "url('#bg-morning')" : current === 'afternoon' ? "url('#bg-afternoon')" : "url('#bg-night')"}
+				/>
+			) : null}
 		</g>
 	);
 };

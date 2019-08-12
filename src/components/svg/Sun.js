@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { TweenMax } from 'gsap';
 
-const Sun = () => {
+const Sun = props => {
 	useEffect(() => {
 		TweenMax.to(['.sunRay1', '.sunRay2'], 1, {
 			transformOrigin: '50% 50%',
@@ -11,6 +11,16 @@ const Sun = () => {
 			yoyoEase: true
 		});
 	}, []);
+
+	useEffect(() => {
+		if (props.current === 'morning') {
+			TweenMax.to('#sun', 1, { y: 0, x: 0, opacity: 1 });
+		} else if (props.current === 'afternoon') {
+			TweenMax.to('#sun', 1, { y: 120, x: -180, opacity: 1 });
+		} else {
+			TweenMax.to('#sun', 1, { y: 350, x: -250, opacity: 0 });
+		}
+	}, [props]);
 
 	return (
 		<g id='sun'>

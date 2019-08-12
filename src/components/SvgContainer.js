@@ -22,24 +22,10 @@ import Background from './svg/Background';
 
 const SvgContainer = () => {
 	const [time, setTime] = useState(new Date());
-	const [morning, setMorning] = useState(true);
-	const [afternoon, setAfternoon] = useState(false);
-	const [night, setNight] = useState(false);
+	const [current, setCurrent] = useState('morning');
 
 	const toggle = type => {
-		if (type === 'morning') {
-			setMorning(true);
-			setAfternoon(false);
-			setNight(false);
-		} else if (type === 'afternoon') {
-			setMorning(false);
-			setAfternoon(true);
-			setNight(false);
-		} else {
-			setMorning(false);
-			setAfternoon(false);
-			setNight(true);
-		}
+		setCurrent(type);
 	};
 
 	useEffect(() => {
@@ -51,11 +37,12 @@ const SvgContainer = () => {
 		<div className='svg-container'>
 			<button onClick={() => toggle('morning')}>morning</button>
 			<button onClick={() => toggle('afternoon')}>afternoon</button>
-			<button onClick={() => toggle('evening')}>evening</button>
+			<button onClick={() => toggle('night')}>evening</button>
 			<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink' viewBox='0 0 350 600' xmlSpace='preserve'>
-				<Background time={time} morning={morning} afternoon={afternoon} night={night} />
-				<Building />
-				<Sun />
+				<Background current={current} />
+				<Sun current={current} />
+				<Building current={current} />
+
 				<Clouds />
 				<Road />
 				<TreeA />
