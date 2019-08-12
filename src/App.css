@@ -19,7 +19,14 @@
 	transition: 1s;
 }
 
-#bldg-afternoon {
+/* stars */
+.stars-4 {
+	opacity: 0.8;
+	fill: #ffffff;
+}
+.stars-5 {
+	opacity: 0.2;
+	fill: #ffffff;
 }
 
 /* trees */

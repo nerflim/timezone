@@ -16,6 +16,27 @@ const Clouds = () => {
 			yoyo: true,
 			ease: Power0.easeNone
 		});
+
+		TweenMax.to(['.cloud3'], 5, {
+			x: -20,
+			repeat: -1,
+			yoyo: true,
+			ease: Power0.easeNone
+		});
+
+		TweenMax.to(['.cloud4'], 5, {
+			x: 20,
+			repeat: -1,
+			yoyo: true,
+			ease: Power0.easeNone
+		});
+
+		TweenMax.to(['.cloud5'], 5, {
+			x: 20,
+			repeat: -1,
+			yoyo: true,
+			ease: Power0.easeNone
+		});
 	}, []);
 
 	return (
@@ -47,6 +68,7 @@ const Clouds = () => {
 		c3.7,1.6,7-0.5,16.5-0.5C293,148.8,288.9,147.5,284.9,146.2z'
 			/>
 			<path
+				className='cloud3'
 				opacity='0.5'
 				fill='#ffffff'
 				d='M129.4,72.6c-2.3-0.4-10.1-2.1-14.7-4.5c-1.3-0.7-3.5-2.3-4.9-2.5c-0.2,0-0.4-0.1-0.6-0.1
@@ -61,6 +83,7 @@ const Clouds = () => {
 		h29.6C148.3,74.4,138.8,73.7,129.4,72.6z'
 			/>
 			<path
+				className='cloud4'
 				opacity='0.2'
 				fill='#ffffff'
 				d='M154.9,61.4c-2.9-0.9-5.2-2-7.5,0c0.5-3.2,0.9-6.5,0-9.6c-0.9-3.1-3.5-5.9-6.7-6.2
@@ -71,6 +94,7 @@ const Clouds = () => {
 		c3.7,1.6,7-0.5,16.5-0.5C163.1,64.1,159,62.7,154.9,61.4z'
 			/>
 			<path
+				className='cloud5'
 				opacity='0.4'
 				fill='#ffffff'
 				d='M129.2,141.9c-0.3-1.9-2.1-3.3-4-3.8c-1.9-0.4-3.7,0.2-5.7,0.6c1.6-1.6,3.3-3.3,4.3-5.4
