@@ -44,7 +44,7 @@ const SvgContainer = () => {
 				<Building current={current} />
 
 				<Clouds />
-				<Road />
+				<Road current={current} />
 				<TreeA />
 				<TreeB />
 				<TreeC />
@@ -59,7 +59,7 @@ const SvgContainer = () => {
 				<CarC />
 				<PersonA />
 				<PersonB />
-				<Time time={time} />
+				<Time time={time} current={current} />
 			</svg>
 		</div>
 	);
